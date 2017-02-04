@@ -1,0 +1,170 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 16px;
+}
+.row::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+img{
+	max-width: 100%;
+}
+picture{
+	overflow: hidden;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.col{
+	position: relative;
+	min-height: 1px;
+	padding: 0 15px; 
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+	width: 100%;
+	float: left;
+}
+
+@media (min-width: 768px){
+	.container{
+		width: 738px;
+		margin: 0 auto;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (min-width: 1024px){
+	.container{
+		width: 994px;
+		margin: 0 auto;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+		float: left;
+	}
+	.col-1{
+		width: 8.33%;
+	}
+	.col-2{
+		width: 16.66%;
+	}
+	.col-3{
+		width: 25%;
+	}
+	.col-4{
+		width: 33.33%;
+	}
+	.col-5{
+		width: 41.66%;
+	}
+	.col-6{
+		width: 50%;
+	}
+	.col-7{
+		width: 58.33%;
+	}
+	.col-8{
+		width: 66.66%;
+	}
+	.col-9{
+		width: 75%;
+	}
+	.col-10{
+		width: 83.33%;
+	}
+	.col-11{
+		width: 91.66%;
+	}
+	.col-12{
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px){
+	.container{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+		float: left;
+	}
+	.col-1{
+		width: 8.33%;
+	}
+	.col-2{
+		width: 16.66%;
+	}
+	.col-3{
+		width: 25%;
+	}
+	.col-4{
+		width: 33.33%;
+	}
+	.col-5{
+		width: 41.66%;
+	}
+	.col-6{
+		width: 50%;
+	}
+	.col-7{
+		width: 58.33%;
+	}
+	.col-8{
+		width: 66.66%;
+	}
+	.col-9{
+		width: 75%;
+	}
+	.col-10{
+		width: 83.33%;
+	}
+	.col-11{
+		width: 91.66%;
+	}
+	.col-12{
+		width: 100%;
+	}
+}
+
+.container{
+	.item{
+		background-color: #f2f2f2;
+		margin-bottom: 20px;
+		> p{
+			margin: 0;
+			font-size: 1rem;
+			padding: 0.5rem;
+			text-align: justify;
+		}
+	}
+	.destaque{
+		margin-bottom: 30px;
+		.chamada{
+			font-size: 1.2rem;
+			> h1{
+				text-align: left;
+				margin-top: 0;
+			}
+			> p{
+				text-align: justify;
+			}
+		}
+		@media (max-width: 768px){
+			.chamada{
+			font-size: 1.1rem;
+			> h1{
+				font-size: 1.2rem;
+				margin-top: 20px;
+			}
+		}
+		}
+	}
+}
